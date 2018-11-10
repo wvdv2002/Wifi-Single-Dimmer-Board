@@ -106,6 +106,7 @@ String pubTopic;
 String subTopic;
 String mqttServer = "";
 const char* otaServerIndex = "<form method='POST' action='/update' enctype='multipart/form-data'><input type='file' name='update'><input type='submit' value='Update'></form>";
+void btn_handle(void);
 
 //-------------- void's -------------------------------------------------------------------------------------
 void setup() {
