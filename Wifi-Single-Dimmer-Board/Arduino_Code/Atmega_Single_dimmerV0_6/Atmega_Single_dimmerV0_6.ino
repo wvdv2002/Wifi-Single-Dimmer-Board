@@ -12,7 +12,7 @@ Date: 09/06/2018
 
 */ 
 #include  <TimerOne.h>
-#define version_no "FVer 0.6 ,HVer 0.2" 
+#define version_no "FVer 0.6 ,HVer 0.3" 
 //Dimmer pin no.
 #define DIMMABLE_TRIAC 8 //Gpio 7       
 
@@ -144,11 +144,10 @@ void loop()
     {
       dimmer_status = true;     
     }
-    if (serialReceived.substring(0, 7) == "Dimmer1:")
+    if (serialReceived.substring(0, 8) == "Dimmer1:")
     {
       Dimmer_value_temp = serialReceived;     
     }
-
   }
 
 /*################## Flag setting for Dimmable Triac through uart ##################################*/
